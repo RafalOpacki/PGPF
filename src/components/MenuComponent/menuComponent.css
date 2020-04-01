@@ -1,3 +1,28 @@
 .menu {
-  display: flex;
+  display: none;
+}
+
+.menu--opened {
+  z-index: 2;
+  position: fixed;
+  display: grid;
+  padding: 50px 0;
+  transition: transform 0.3s linear;
+  grid-template-rows: repeat(5, auto);
+  place-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  top: 0;
+  left: 0;
+  transform: translateX(0%);
+}
+
+@media (min-width: 1024px) {
+  .menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    transition: transform 0.3s linear;
+    grid-gap: 15px;
+  }
 }

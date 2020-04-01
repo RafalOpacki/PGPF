@@ -1,0 +1,14 @@
+.back-to-top__button {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  background-color: var(--secondary);
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  font-size: 18px;
+}

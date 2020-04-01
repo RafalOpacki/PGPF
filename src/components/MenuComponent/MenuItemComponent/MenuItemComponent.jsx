@@ -1,21 +1,11 @@
-import React, { useCallback } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import './menuItemComponent.css';
 
 const MenuItemComponent = ({ section, label }) => {
-  const onClick = useCallback(
-    () =>
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth',
-      }),
-    [],
-  );
-
   return (
     <li className='menu-item__wrapper'>
-      <a className='menu-item__link' href={`#${section}`} onClick={onClick}>
+      <a className='menu-item__link' href={`#${section}`}>
         {label}
       </a>
     </li>

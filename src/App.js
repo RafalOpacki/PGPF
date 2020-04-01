@@ -4,15 +4,17 @@ import BackToTopComponent from './components/BackToTopComponent/BackToTopCompone
 import HomeSection from './components/HomeSection/HomeSection';
 import BenefitsSection from './components/BenefitsSection/BenefitsSection';
 import HowItWorksSection from './components/HowItWorksSection/HowItWorksSection';
+import AboutSection from './components/AboutSection/AboutSection';
 
 function App() {
   return (
     <div className='App'>
       <NavbarComponent />
-      <BackToTopComponent />
       <HomeSection />
-      <BenefitsSection />
+      <AboutSection />
       <HowItWorksSection />
+      <BenefitsSection />
+      <BackToTopComponent />
     </div>
   );
 }

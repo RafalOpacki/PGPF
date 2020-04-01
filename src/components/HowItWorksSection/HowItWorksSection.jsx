@@ -8,12 +8,12 @@ import HowItWorksSectionHeader from './HowItWorksSectionHeader/HowItWorksSection
 const HowItWorksSection = () => {
   return (
     <section id={sections.howItWorks} className='how-it-works-section__wrapper'>
-      <HowItWorksSectionHeader />
       <ImageComponent
         src={howItWorksImage}
         alt='how it works'
         className='how-it-works-section__image'
       />
+      <HowItWorksSectionHeader />
     </section>
   );
 };

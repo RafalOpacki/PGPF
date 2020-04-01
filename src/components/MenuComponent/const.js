@@ -1,22 +1,28 @@
+import { sections } from '../../constants/sections';
+
 export const menuItems = [
   {
-    section: 'home',
+    section: sections.home,
     label: 'Home',
   },
   {
-    section: 'benefits',
-    label: 'Korzyści',
+    section: sections.about,
+    label: 'O nas',
   },
   {
-    section: 'howItWorks',
+    section: sections.howItWorks,
     label: 'Jak to działa?',
   },
   {
-    section: 'purchase',
+    section: sections.benefits,
+    label: 'Korzyści',
+  },
+  {
+    section: sections.purchase,
     label: 'Proces zakupu',
   },
   {
-    section: 'contact',
+    section: sections.contact,
     label: 'Kontakt',
   },
 ];

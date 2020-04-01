@@ -1,0 +1,18 @@
+.about-section__wrapper {
+  padding: 100px 5% 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-section__header {
+  font-size: 30px;
+}
+
+.about-section__text {
+  margin-bottom: 15px;
+}
+
+.about-section__text:last-of-type {
+  margin-bottom: 0;
+}

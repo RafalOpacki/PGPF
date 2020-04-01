@@ -1,0 +1,15 @@
+.menu-item__wrapper {
+  list-style-type: none;
+  margin-left: 20px;
+  font-weight: 500;
+}
+
+.menu-item__link {
+  color: var(--base);
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.menu-item__link:hover {
+  color: var(--secondary);
+}

@@ -1,0 +1,18 @@
+.benefits-card__wrapper {
+  border: 1px solid #c4d8dc;
+  padding: 30px 20px;
+  text-align: center;
+  width: auto;
+  max-width: 300px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.benefits-card__title {
+  margin-bottom: 15px;
+}
+
+.benefits-card__content {
+  font-size: 14px;
+  color: #626262;
+}

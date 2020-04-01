@@ -1,0 +1,14 @@
+.benefits-header__wrapper {
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.benefits-header__header {
+  font-size: 30px;
+}
+
+@media (min-width: 768px) {
+  .benefits-header__wrapper {
+    width: 60%;
+  }
+}

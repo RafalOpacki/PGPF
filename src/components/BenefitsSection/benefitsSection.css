@@ -1,0 +1,19 @@
+.benefits-section__wrapper {
+  text-align: center;
+  padding: 100px 5% 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.benefits-section__list {
+  display: grid;
+  grid-gap: 20px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .benefits-section__list {
+    grid-template-columns: repeat(3, auto);
+  }
+}

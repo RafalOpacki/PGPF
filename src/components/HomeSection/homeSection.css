@@ -1,0 +1,32 @@
+.home-section__wrapper {
+  text-align: center;
+  padding: 100px 5%;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.home-section__title {
+  color: var(--secondary);
+}
+
+.home-section__title,
+.home-section__subtitle {
+  font-size: 40px;
+}
+
+.home-section__subtitle {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .home-section__wrapper {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+  .home-section__image {
+    width: 50%;
+  }
+}

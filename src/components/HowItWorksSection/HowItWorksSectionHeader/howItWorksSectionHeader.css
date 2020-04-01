@@ -1,0 +1,16 @@
+.how-it-works-header__wrapper {
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.how-it-works-header__header {
+  font-size: 30px;
+}
+
+@media (min-width: 768px) {
+  .how-it-works-header__wrapper {
+    max-width: 50%;
+    text-align: left;
+    margin-right: 50px;
+  }
+}

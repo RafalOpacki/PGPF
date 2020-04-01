@@ -1,0 +1,19 @@
+.how-it-works-section__wrapper {
+  text-align: center;
+  padding: 100px 5% 0;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .how-it-works-section__wrapper {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .how-it-works-section__image {
+    width: 50%;
+  }
+}

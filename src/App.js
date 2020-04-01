@@ -3,6 +3,7 @@ import NavbarComponent from '../src/components/NavbarComponent/NavbarComponent';
 import BackToTopComponent from './components/BackToTopComponent/BackToTopComponent';
 import HomeSection from './components/HomeSection/HomeSection';
 import BenefitsSection from './components/BenefitsSection/BenefitsSection';
+import HowItWorksSection from './components/HowItWorksSection/HowItWorksSection';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <BackToTopComponent />
       <HomeSection />
       <BenefitsSection />
+      <HowItWorksSection />
     </div>
   );
 }

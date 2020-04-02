@@ -1,0 +1,12 @@
+.purchase-content__wrapper {
+  text-decoration: none;
+  display: flex;
+  align-items: baseline;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.purchase-content__icon {
+  margin-right: 10px;
+  color: var(--secondary);
+}

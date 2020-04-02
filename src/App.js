@@ -5,6 +5,7 @@ import HomeSection from './components/HomeSection/HomeSection';
 import BenefitsSection from './components/BenefitsSection/BenefitsSection';
 import HowItWorksSection from './components/HowItWorksSection/HowItWorksSection';
 import AboutSection from './components/AboutSection/AboutSection';
+import PurchaseSection from './components/PurchaseSection/PurchaseSection';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <AboutSection />
       <HowItWorksSection />
       <BenefitsSection />
+      <PurchaseSection />
       <BackToTopComponent />
     </div>
   );

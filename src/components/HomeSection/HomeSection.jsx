@@ -1,18 +1,24 @@
 import React from 'react';
-import './homeSection.css';
+import { FormattedMessage } from 'react-intl';
 import homeImage from '../../images/home-image.svg';
 import ImageComponent from '../ImageComponent/ImageComponent';
 import ButtonComponent from '../ButtonComponent/ButtonComponent';
 import { sections } from '../../constants/sections';
+import messages from './messages';
+import './homeSection.css';
 
 const HomeSection = () => {
   return (
     <section id={sections.home}>
       <div className='home-section__wrapper'>
         <div>
-          <h2 className='home-section__title'>Energia ze słońca</h2>
-          <h3 className='home-section__subtitle'>Fotowoltaika</h3>
-          <ButtonComponent text='zobacz jak to działa' />
+          <h2 className='home-section__title'>
+            <FormattedMessage {...messages.title} />
+          </h2>
+          <h3 className='home-section__subtitle'>
+            <FormattedMessage {...messages.subtitle} />
+          </h3>
+          <ButtonComponent text={messages.howItWorksButton} />
         </div>
         <ImageComponent
           src={homeImage}

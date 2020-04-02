@@ -1,4 +1,5 @@
 import React, { useMemo } from 'react';
+import { FormattedMessage } from 'react-intl';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import './buttonComponent.css';
@@ -9,7 +10,11 @@ const ButtonComponent = ({ text, fullWidth }) => {
     [fullWidth],
   );
 
-  return <button className={classes}>{text}</button>;
+  return (
+    <button className={classes}>
+      <FormattedMessage {...text} />
+    </button>
+  );
 };
 
 ButtonComponent.propTypes = {

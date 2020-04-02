@@ -11,10 +11,10 @@ const MenuComponent = ({ isMenuOpen, toggleMenu }) => {
 
   return (
     <ul className={classes}>
-      {menuItems.map((item, index) => (
+      {menuItems.map((menuItem) => (
         <MenuItemComponent
-          key={index}
-          {...item}
+          key={menuItem}
+          menuItem={menuItem}
           toggleMenu={toggleMenu}
           isMenuOpen={isMenuOpen}
         />

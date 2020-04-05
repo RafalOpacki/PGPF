@@ -12,7 +12,7 @@ const AboutSection = () => {
         <FormattedMessage {...messages.title} />
       </h2>
       {aboutSectionItems.map((item) => (
-        <p className='about-section__text'>
+        <p key={item} className='about-section__text'>
           <FormattedMessage {...messages[item]} />
         </p>
       ))}

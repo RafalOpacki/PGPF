@@ -29,4 +29,7 @@
   .home-section__image {
     width: 50%;
   }
+  .home-section__title {
+    font-size: 44px;
+  }
 }

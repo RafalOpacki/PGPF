@@ -18,7 +18,9 @@ const HomeSection = () => {
           <h3 className='home-section__subtitle'>
             <FormattedMessage {...messages.subtitle} />
           </h3>
-          <ButtonComponent text={messages.howItWorksButton} />
+          <a href={`#${sections.howItWorks}`}>
+            <ButtonComponent text={messages.howItWorksButton} />
+          </a>
         </div>
         <ImageComponent
           src={homeImage}

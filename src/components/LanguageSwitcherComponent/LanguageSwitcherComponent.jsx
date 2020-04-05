@@ -30,7 +30,10 @@ const LanguageSwitcherComponent = ({ currentLanguage, setCurrentLanguage }) => {
       </button>
       {isMenuOpen &&
         languagesWithoutCurrentLanguage.map((language) => (
-          <div className='language-switcher__button-wrapper'>
+          <div
+            key={language.name}
+            className='language-switcher__button-wrapper'
+          >
             <button
               className='language-switcher__button'
               onClick={handleClick(language)}

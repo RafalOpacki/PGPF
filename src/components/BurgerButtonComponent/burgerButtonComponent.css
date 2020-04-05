@@ -6,7 +6,6 @@
   outline: none;
   cursor: pointer;
   width: 30px;
-  z-index: 3;
 }
 
 .burger-button__inner {

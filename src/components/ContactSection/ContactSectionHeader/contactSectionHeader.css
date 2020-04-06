@@ -11,7 +11,7 @@
 
 .contact-header__icon {
   margin-right: 15px;
-  color: #00bfd8;
+  color: var(--secondary);
 }
 
 .contact-header__data-item {
@@ -36,5 +36,14 @@
     width: 80%;
     max-width: 600px;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-section__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    place-items: center;
   }
 }

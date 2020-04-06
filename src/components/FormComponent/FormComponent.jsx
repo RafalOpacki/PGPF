@@ -7,7 +7,7 @@ import './formComponent.css';
 
 const FormComponent = () => {
   return (
-    <form className='form__wrapper'>
+    <form className='form__wrapper' action='mail.php' method='POST'>
       <InputComponent
         name='name'
         placeholder={messages.name}

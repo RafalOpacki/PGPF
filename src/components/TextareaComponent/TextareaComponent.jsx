@@ -14,6 +14,7 @@ const TextareaComponent = ({ placeholder, name, required }) => {
       placeholder={intl.formatMessage(placeholder)}
       rows='8'
       required={required || false}
+      autocomplete='off'
     />
   );
 };

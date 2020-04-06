@@ -3,6 +3,7 @@
   padding: 100px 5% 0;
   width: 100%;
   max-width: 1200px;
+  margin: 0 auto;
 }
 
 .home-section__title {
@@ -15,7 +16,8 @@
 }
 
 .home-section__subtitle {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+  color: var(--base);
 }
 
 @media (min-width: 768px) {

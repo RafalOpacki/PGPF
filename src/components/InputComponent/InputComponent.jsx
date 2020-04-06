@@ -13,7 +13,7 @@ const InputComponent = ({ placeholder, name, type, required }) => {
       type={type}
       placeholder={intl.formatMessage(placeholder)}
       required={required || false}
-      autocomplete='off'
+      autoComplete='off'
     />
   );
 };

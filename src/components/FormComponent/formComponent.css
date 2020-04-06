@@ -1,0 +1,4 @@
+.form__wrapper {
+  display: grid;
+  grid-gap: 15px;
+}

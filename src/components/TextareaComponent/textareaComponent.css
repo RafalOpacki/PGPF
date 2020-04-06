@@ -1,0 +1,15 @@
+.textarea {
+  border: 1px solid #c4d8dc;
+  padding: 10px 15px;
+  outline: none;
+  transition: border 0.3s;
+  border-radius: 5px;
+  color: #626262;
+  width: 100%;
+  resize: none;
+  min-height: 150px;
+}
+
+.textarea:focus {
+  border: 1px solid #626262;
+}

@@ -7,6 +7,7 @@ import BenefitsSection from './components/BenefitsSection/BenefitsSection';
 import HowItWorksSection from './components/HowItWorksSection/HowItWorksSection';
 import AboutSection from './components/AboutSection/AboutSection';
 import PurchaseSection from './components/PurchaseSection/PurchaseSection';
+import ContactSection from './components/ContactSection/ContactSection';
 import pl from './lang/pl';
 import en from './lang/en';
 import { languages } from './constants/languages';
@@ -35,6 +36,7 @@ function App() {
         <HowItWorksSection />
         <BenefitsSection />
         <PurchaseSection />
+        <ContactSection />
         <BackToTopComponent />
       </div>
     </IntlProvider>

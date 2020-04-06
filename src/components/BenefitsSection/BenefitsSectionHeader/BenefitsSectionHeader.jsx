@@ -1,17 +1,17 @@
 import React from 'react';
+import { FormattedMessage } from 'react-intl';
+import messages from './messages';
 import './benefitsSectionHeader.css';
 
-const BenefitsSectionHeader = () => {
-  return (
-    <div className='benefits-header__wrapper'>
-      <h2 className='benefits-header__header'>Korzyści</h2>
-      <p>
-        0 zł za rachunki za prąd, a nadwyżkę energii, której nie zużyjesz od
-        razu, możesz wprowadzić do sieci dystrybucyjnej i odebrać 80% tej
-        energii w przeciągu roku, bez dodatkowych opłat.
-      </p>
-    </div>
-  );
-};
+const BenefitsSectionHeader = () => (
+  <div className='benefits-header__wrapper'>
+    <h2 className='benefits-header__header'>
+      <FormattedMessage {...messages.title} />
+    </h2>
+    <p>
+      <FormattedMessage {...messages.text} />
+    </p>
+  </div>
+);
 
 export default BenefitsSectionHeader;

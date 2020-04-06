@@ -18,7 +18,10 @@ const ButtonComponent = ({ text, fullWidth }) => {
 };
 
 ButtonComponent.propTypes = {
-  text: PropTypes.string,
+  text: PropTypes.shape({
+    id: PropTypes.string,
+    defaultMessage: PropTypes.string,
+  }),
   fullWidth: PropTypes.bool,
 };
 

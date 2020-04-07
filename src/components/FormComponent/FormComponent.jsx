@@ -7,7 +7,7 @@ import './formComponent.css';
 
 const FormComponent = () => {
   return (
-    <form className='form__wrapper' action='mail.php' method='POST'>
+    <form className='form__wrapper' action='mail.php' method='post'>
       <InputComponent
         name='name'
         placeholder={messages.name}
@@ -25,7 +25,7 @@ const FormComponent = () => {
         placeholder={messages.message}
         required
       />
-      <ButtonComponent fullWidth text={messages.submit} />
+      <ButtonComponent fullWidth text={messages.submit} type='submit' />
     </form>
   );
 };

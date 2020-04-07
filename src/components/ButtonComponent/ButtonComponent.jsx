@@ -4,14 +4,14 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import './buttonComponent.css';
 
-const ButtonComponent = ({ text, fullWidth }) => {
+const ButtonComponent = ({ text, fullWidth, type }) => {
   const classes = useMemo(
     () => classNames('button', { 'button--full-width': fullWidth }),
     [fullWidth],
   );
 
   return (
-    <button className={classes}>
+    <button className={classes} type={type || 'button'}>
       <FormattedMessage {...text} />
     </button>
   );
@@ -23,6 +23,7 @@ ButtonComponent.propTypes = {
     defaultMessage: PropTypes.string,
   }),
   fullWidth: PropTypes.bool,
+  type: PropTypes.string,
 };
 
 export default ButtonComponent;

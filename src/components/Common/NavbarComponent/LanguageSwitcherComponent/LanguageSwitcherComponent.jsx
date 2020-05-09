@@ -1,6 +1,7 @@
 import React, { useMemo, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import useToggle from 'hooks/useToggle/useToggle';
+import { languageLocales, languageNames } from 'constants/languages';
 import { supportedLanguages } from './const';
 import './languageSwitcherComponent.css';
 
@@ -48,7 +49,10 @@ const LanguageSwitcherComponent = ({ currentLanguage, setCurrentLanguage }) => {
 };
 
 LanguageSwitcherComponent.propTypes = {
-  currentLanguage: PropTypes.oneOf([...supportedLanguages]),
+  currentLanguage: PropTypes.shape({
+    locale: PropTypes.oneOf([...languageLocales]),
+    name: PropTypes.oneOf([...languageNames]),
+  }),
   setCurrentLanguage: PropTypes.func,
 };
 

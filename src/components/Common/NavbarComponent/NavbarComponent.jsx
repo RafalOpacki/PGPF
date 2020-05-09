@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { languageNames, languageLocales } from 'constants/languages';
 import logo from 'images/logo.svg';
 import useToggle from 'hooks/useToggle/useToggle';
 import ImageComponent from 'components/Common/ImageComponent/ImageComponent';
@@ -23,6 +25,14 @@ const NavbarComponent = ({ currentLanguage, setCurrentLanguage }) => {
       </div>
     </nav>
   );
+};
+
+NavbarComponent.propTypes = {
+  currentLanguage: PropTypes.shape({
+    locale: PropTypes.oneOf([...languageLocales]),
+    name: PropTypes.oneOf([...languageNames]),
+  }),
+  setCurrentLanguage: PropTypes.func,
 };
 
 export default NavbarComponent;

@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
-import { FormattedMessage } from 'react-intl';
 import PropTypes from 'prop-types';
+import { FormattedMessage } from 'react-intl';
 import classNames from 'classnames';
 import './buttonComponent.css';
 

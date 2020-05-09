@@ -1,6 +1,6 @@
 import React, { useMemo, useCallback } from 'react';
 import PropTypes from 'prop-types';
-import useToggle from '../../hooks/useToggle/useToggle';
+import useToggle from 'hooks/useToggle/useToggle';
 import { supportedLanguages } from './const';
 import './languageSwitcherComponent.css';
 
@@ -24,18 +24,18 @@ const LanguageSwitcherComponent = ({ currentLanguage, setCurrentLanguage }) => {
   );
 
   return (
-    <div className='language-switcher__wrapper'>
-      <button className='language-switcher__button' onClick={toggleMenu}>
+    <div className="language-switcher__wrapper">
+      <button className="language-switcher__button" onClick={toggleMenu}>
         {currentLanguage.name}
       </button>
       {isMenuOpen &&
         languagesWithoutCurrentLanguage.map((language) => (
           <div
             key={language.name}
-            className='language-switcher__button-wrapper'
+            className="language-switcher__button-wrapper"
           >
             <button
-              className='language-switcher__button'
+              className="language-switcher__button"
               onClick={handleClick(language)}
               key={language.name}
             >

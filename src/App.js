@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { IntlProvider } from 'react-intl';
-import NavbarComponent from '../src/components/NavbarComponent/NavbarComponent';
-import BackToTopComponent from './components/BackToTopComponent/BackToTopComponent';
-import HomeSection from './components/HomeSection/HomeSection';
-import BenefitsSection from './components/BenefitsSection/BenefitsSection';
-import HowItWorksSection from './components/HowItWorksSection/HowItWorksSection';
-import AboutSection from './components/AboutSection/AboutSection';
-import PurchaseSection from './components/PurchaseSection/PurchaseSection';
-import ContactSection from './components/ContactSection/ContactSection';
-import FooterSection from './components/FooterSection/FooterSection';
+import NavbarComponent from 'components/Common/NavbarComponent/NavbarComponent';
+import BackToTopComponent from 'components/Common/BackToTopComponent/BackToTopComponent';
+import FooterSection from 'components/Sections/FooterSection/FooterSection';
+import ContactSection from 'components/Sections/ContactSection/ContactSection';
+import PurchaseSection from 'components/Sections/PurchaseSection/PurchaseSection';
+import BenefitsSection from 'components/Sections/BenefitsSection/BenefitsSection';
+import HowItWorksSection from 'components/Sections/HowItWorksSection/HowItWorksSection';
+import AboutSection from 'components/Sections/AboutSection/AboutSection';
+import HomeSection from 'components/Sections/HomeSection/HomeSection';
 import pl from './lang/pl';
 import en from './lang/en';
 import { languages } from './constants/languages';
@@ -27,7 +27,7 @@ function App() {
       key={currentLanguage.locale}
       messages={messages[currentLanguage.name]}
     >
-      <div className='App'>
+      <div className="App">
         <NavbarComponent
           setCurrentLanguage={setCurrentLanguage}
           currentLanguage={currentLanguage}

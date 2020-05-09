@@ -1,4 +1,4 @@
-import { sections } from '../../constants/sections';
+import { sections } from 'constants/sections';
 
 export const menuItems = [
   sections.home,

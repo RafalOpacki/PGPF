@@ -1,31 +1,31 @@
 import React from 'react';
+import ButtonComponent from 'components/Common/ButtonComponent/ButtonComponent';
 import TextareaComponent from '../TextareaComponent/TextareaComponent';
 import InputComponent from '../InputComponent/InputComponent';
-import ButtonComponent from '../ButtonComponent/ButtonComponent';
 import messages from './messages';
 import './formComponent.css';
 
 const FormComponent = () => {
   return (
-    <form className='form__wrapper' action='mail.php' method='post'>
+    <form className="form__wrapper" action="mail.php" method="post">
       <InputComponent
-        name='name'
+        name="name"
         placeholder={messages.name}
-        type='text'
+        type="text"
         required
       />
       <InputComponent
-        name='email'
+        name="email"
         placeholder={messages.email}
-        type='email'
+        type="email"
         required
       />
       <TextareaComponent
-        name='message'
+        name="message"
         placeholder={messages.message}
         required
       />
-      <ButtonComponent fullWidth text={messages.submit} type='submit' />
+      <ButtonComponent fullWidth text={messages.submit} type="submit" />
     </form>
   );
 };
